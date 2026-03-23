@@ -13,7 +13,7 @@ Artwork::Artwork(const std::string& artTitle, const std::string& artistFullName,
 
 }
 
-//move constructor
+// Move Constructor
 Artwork::Artwork(Artwork&& other)
 	: title(std::move(other.title)),
 	artistName(std::move(other.artistName)),
@@ -26,6 +26,7 @@ Artwork::Artwork(Artwork&& other)
 
 }
 
+// Copy Constructor
 Artwork::Artwork(const Artwork& other)
 	: title(other.title),
 	artistName(other.artistName),
@@ -34,5 +35,5 @@ Artwork::Artwork(const Artwork& other)
 	price(other.price),
 	sold(other.sold)
 {
-	// This creates a brand new copy of the data
+	
 }
