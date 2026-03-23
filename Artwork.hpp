@@ -15,10 +15,10 @@ public:
 
 	Artwork(const std::string& artTitle, const std::string& artistFullName, int artId, const std::string& artworkMedium, double artworkPrice, bool soldStatus = false);
 
-	//copy constructor 
+	//Copy Constructor 
 	Artwork(const Artwork& Other);
 
-	//move constructor
+	//Move Constructor
 	Artwork(Artwork&& other);
 
 	void markAsSold();
